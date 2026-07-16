@@ -76,8 +76,18 @@
       z-index: 10;
     }
     
-    .header-title i {
-      color: #064E3B; /* Ikon juga disesuaikan agar senada */
+    /* 2. HEADER - Tambahkan/Update bagian ini */
+    .header-title {
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid rgba(6, 78, 59, 0.2);
+      /* Menambahkan shadow yang sama dengan system-status */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+      background-color: white; /* Tambahkan background agar shadow terlihat jelas */
     }
 
     .system-status {
@@ -90,6 +100,8 @@
       align-items: center;
       gap: 6px;
       border: 1px solid rgba(6, 78, 59, 0.2);
+      background-color: white; /* Konsistensi background */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Shadow asli */
     }
     
     .status-dot {
@@ -97,6 +109,7 @@
       height: 6px;
       border-radius: 50%;
     }
+    
     .spinner {
       width: 35px;
       height: 35px;
